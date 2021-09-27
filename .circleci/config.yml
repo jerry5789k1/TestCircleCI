@@ -8,8 +8,8 @@ jobs:
           password: 5q6w7e8569  # context / project UI env-var reference
     steps:
       - checkout
-      - run: yarn install
-      - run: yarn test
+      - run: yarn
+      - run: yarn test react-scripts test --watchAll
 workflows:
   version: 2
   build_and_test:
